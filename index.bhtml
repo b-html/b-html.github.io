@@ -7,8 +7,13 @@
     <title
       b-html
   <body
-    <h1
-      b-html
+    <header
+      <h1
+        @class title
+        b-html
+      <p
+        @class description
+        b-html is an easy HTML syntax sugar.
     <p
       Demo:
       <a
