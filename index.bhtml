@@ -1,0 +1,21 @@
+><!DOCTYPE html>
+<html
+  @lang en
+  <head
+    </meta
+      @charset utf-8
+    <title
+      b-html
+  <body
+    <h1
+      b-html
+    <p
+      Demo:
+      <a
+        @href http://b-html.org/b-html-demo/
+        b-html-demo
+      </br
+      Source Code:
+      <a
+        @href https://github.com/b-html/b-html
+        b-html/b-html
