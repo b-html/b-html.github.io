@@ -10,17 +10,45 @@
     <header
       <h1
         @class title
-        b-html
+        <a
+          @href /
+          b-html
       <p
         @class description
         b-html is an easy HTML syntax sugar.
-    <p
-      Demo:
-      <a
-        @href http://b-html.org/b-html-demo/
-        b-html-demo
-      </br
-      Source Code:
-      <a
-        @href https://github.com/b-html/b-html
-        b-html/b-html
+    <div
+      @class content
+      <div
+        @class installation
+        <a
+          @href https://github.com/b-html/b-html#installation
+          Install v0.7.0
+      <div
+        @class source-code
+        <a
+          @href https://github.com/b-html/b-html
+          Source Code on GitHub
+      <div
+        @class links
+        <ul
+          <li
+            <a
+              @href http://b-html.org/b-html-demo/
+              Demo
+            (
+            <a
+              @href https://github.com/b-html/b-html-demo
+              Source Code on GitHub
+            )
+          <li
+            <a
+              @href https://github.com/b-html/b-html
+              b-html/b-html
+          <li
+            <a
+              @href https://www.npmjs.com/package/b-html
+              b-html - npm
+          <li
+            <a
+              @href https://www.npmjs.com/browse/keyword/b-html
+              packages with keyword ‘b-html’ - npm
