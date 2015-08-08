@@ -5,14 +5,32 @@
     </meta
       @charset utf-8
     <title
-      b-html
+      b-html - An easy HTML syntax sugar
+    </meta
+      @name description
+      @content The b-html is a syntax sugar for HTML.
+    </meta
+      @property og:url
+      @content http://b-html.org
+    </meta
+      @property og:title
+      @content b-html - An easy HTML syntax sugar
+    </meta
+      @property og:description
+      @content The b-html is a syntax sugar for HTML.
+    </meta
+      @property og:site_name
+      @content b-html - An easy HTML syntax sugar
+    </meta
+      @property og:image
+      @content http://b-html.org/images/b-html-og.png
   <body
     <header
       <h1
         @class title
         <a
           @href /
-          b-html
+          b-html - An easy HTML syntax sugar
       <p
         @class description
         b-html is an easy HTML syntax sugar.
