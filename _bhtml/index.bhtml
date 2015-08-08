@@ -24,6 +24,10 @@
     </meta
       @property og:image
       @content http://b-html.org/images/b-html-og.png
+    </meta
+      @twitter:card summary
+    </meta
+      @twitter:site @bouzuya
   <body
     <header
       <h1
