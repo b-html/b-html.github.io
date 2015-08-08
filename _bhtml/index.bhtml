@@ -23,7 +23,7 @@
       @content b-html - An easy HTML syntax sugar
     </meta
       @property og:image
-      @content https://cloud.githubusercontent.com/assets/1221346/9149009/3c0d168e-3dcf-11e5-9cb3-2a4394c30380.png
+      @content https://cloud.githubusercontent.com/assets/1221346/9149648/78d97b10-3dee-11e5-98ac-ce5b86ccc75e.png
     </meta
       @name twitter:card
       @content summary
