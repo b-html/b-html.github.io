@@ -30,13 +30,24 @@
     </meta
       @name twitter:site
       @content @bouzuya
+    </link
+      @rel stylesheet
+      @href main.css
   <body
     <header
       <h1
         @class title
         <a
           @href /
-          b-html - An easy HTML syntax sugar
+          </img
+            @class logo-mark
+            @src https://cloud.githubusercontent.com/assets/1221346/9330747/240d75e0-45f6-11e5-99d0-636ca789bd53.png
+          <span
+            @class name
+            b-html
+          <span
+            @class tagline
+            An easy HTML syntax sugar
       <p
         @class description
         b-html is an easy HTML syntax sugar.
@@ -46,33 +57,25 @@
         @class installation
         <a
           @href https://github.com/b-html/b-html#installation
-          Install v0.7.0
+          Install v0.8.0
       <div
         @class source-code
         <a
           @href https://github.com/b-html/b-html
           Source Code on GitHub
       <div
-        @class links
-        <ul
-          <li
-            <a
-              @href http://b-html.org/b-html-demo/
-              Demo
-            (
-            <a
-              @href https://github.com/b-html/b-html-demo
-              Source Code on GitHub
-            )
-          <li
-            <a
-              @href https://github.com/b-html/b-html
-              b-html/b-html
-          <li
-            <a
-              @href https://www.npmjs.com/package/b-html
-              b-html - npm
-          <li
-            <a
-              @href https://www.npmjs.com/browse/keyword/b-html
-              packages with keyword ‘b-html’ - npm
+        @class demo
+        <a
+          @href http://b-html.org/b-html-demo/
+          @target _blank
+          Try b-html (demo)
+      <div
+        @class npm
+        <a
+          @href https://www.npmjs.com/package/b-html
+          b-html - npm
+      <div
+        @class b-html-family
+        <a
+          @href https://www.npmjs.com/browse/keyword/b-html
+          packages with keyword ‘b-html’ - npm

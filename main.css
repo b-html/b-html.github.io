@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+a {
+  color: #0077cf;
+  text-decoration: none;
+}
+.title {
+  height: 480px;
+  text-align: center;
+  font-size: 300%;
+}
+.name {
+  display: block;
+  color: #0077cf;
+}
+.name:hover {
+  text-decoration: underline;
+}
+.tagline {
+  color: #333333;
+  font-size: 50%;
+}
+.description {
+  display: none;
+}
+.installation {
+  text-align: center;
+  margin: 128px;
+}
+.installation a {
+  padding: 32px 64px;
+  border: 4px solid #0077cf;
+  font-weight: bold;
+  font-size: 150%;
+}
+.installation a:hover {
+  background-color: #0077cf;
+  color: #ffffff;
+}
+.source-code,
+.demo,
+.npm,
+.b-html-family {
+  text-align: center;
+  margin: 64px;
+}
+.source-code a,
+.demo a,
+.npm a,
+.b-html-family a {
+  padding: 16px 32px;
+  border: 2px solid #0077cf;
+  font-weight: bold;
+  font-size: 100%;
+}
+.source-code a:hover,
+.demo a:hover,
+.npm a:hover,
+.b-html-family a:hover {
+  background-color: #0077cf;
+  color: #ffffff;
+}
