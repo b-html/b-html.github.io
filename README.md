@@ -2,6 +2,8 @@
 
 A GitHub Pages for [b-html](https://github.com/b-html/b-html).
 
+See: [b-html.org](http://b-html.org).
+
 ## Build
 
 ```
