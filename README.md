@@ -7,6 +7,15 @@ See: [b-html.org](http://b-html.org).
 ## Build
 
 ```
-$ npm install -g b-html-cli
-$ b-html -o . ./_bhtml
+$ npm install
+$ npm run build
+```
+
+## Run server
+
+```
+$ npm install
+$ npm run build
+$ npm run server
+$ open http://localhost:3000
 ```
