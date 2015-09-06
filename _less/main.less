@@ -2,12 +2,21 @@
 @blue: #0077cf;
 @black: #333333;
 
+// reset & base
+
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   background-color: @white;
   color: @black;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Orbitron', monospace;
+}
+
+a {
+  color: @blue;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,69 +25,163 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
-a {
-  color: @blue;
-  text-decoration: none;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.title {
-  height: 480px;
-  text-align: center;
-  font-size: 300%;
+html {
+  background-color: @blue;
+  color: @white;
 }
 
-.name {
-  display: block;
-  color: @blue;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.tagline {
-  color: @black;
-  font-size: 50%;
-}
-
-.description {
-  display: none;
-}
-
-.installation {
-  margin: 128px;
-  text-align: center;
+.nav-section {
+  width: 25%;
+  height: 100%;
+  background-color: @blue;
+  color: @white;
 
   a {
-    padding: 32px 64px;
-    border: 4px solid @blue;
-    font-weight: bold;
-    font-size: 150%;
+    color: @white;
+  }
 
-    &:hover {
-      background-color: @blue;
-      color: @white;
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+
+  .nav-header {
+    padding: 5% 0;
+
+    .nav-heading {
+      text-align: center;
+
+      a {
+        display: block;
+        padding: 5% 0;
+
+        .name {
+          font-size: 64px;
+          border-bottom: 4px solid @white;
+
+          @media screen and (max-width: 1280px) {
+            font-size: 48px;
+            border-bottom: 3px solid @white;
+          }
+
+          @media screen and (max-width: 960px) {
+            font-size: 32px;
+            border-bottom: 2px solid @white;
+          }
+        }
+
+        .description {
+          font-size: 16px;
+          display: block;
+          padding: 16px 0 0 0;
+
+          @media screen and (max-width: 1280px) {
+            font-size: 12px;
+          }
+
+          @media screen and (max-width: 960px) {
+            font-size: 8px;
+          }
+        }
+
+        &:hover {
+          color: @blue;
+          background-color: @white;
+
+          .name {
+            border-color: @blue;
+          }
+        }
+
+        &.active {
+          color: @blue;
+          background-color: @white;
+
+          .name {
+            border-color: @blue;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-content {
+    font-size: 16px;
+
+    @media screen and (max-width: 1280px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 960px) {
+      font-size: 12px;
+    }
+
+    ul {
+      li {
+        a {
+          display: block;
+          padding: 5% 10%;
+
+          &:hover {
+            background-color: @white;
+            color: @blue;
+          }
+
+          &.active {
+            background-color: @white;
+            color: @blue;
+          }
+        }
+      }
     }
   }
 }
 
-.source-code,
-.demo,
-.npm,
-.b-html-family {
-  margin: 64px;
-  text-align: center;
+.root-section {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
 
-  a {
-    padding: 16px 32px;
-    border: 2px solid @blue;
-    // border-radius: 16px;
-    font-weight: bold;
-    font-size: 100%;
+  .content {
+    color: @black;
+    background-color: @white;
+    width: 75%;
+    position: absolute;
+    top: 0;
+    left: 25%;
 
-    &:hover {
-      background-color: @blue;
-      color: @white;
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      left: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .title {
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .root-content {
+      padding: 0 10%;
+    }
+  }
+}
+
+.concepts-section {
+  margin: 5% 0;
+
+  .concepts-content {
+    ul {
+      list-style-type: disc;
+      margin: 5%;
     }
   }
 }

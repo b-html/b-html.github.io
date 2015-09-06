@@ -4,6 +4,9 @@
   <head
     </meta
       @charset utf-8
+    </meta
+      @name viewport
+      @content width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no
     <title
       b-html - An easy HTML syntax sugar
     </meta
@@ -31,54 +34,69 @@
       @name twitter:site
       @content @bouzuya
     </link
-      @href http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700
+      @href http://fonts.googleapis.com/css?family=Orbitron:400
       @rel stylesheet
     </link
       @href main.css
       @rel stylesheet
   <body
-    <header
-      <h1
-        @class title
-        <a
-          @href /
-          </img
-            @class logo-mark
-            @src https://cloud.githubusercontent.com/assets/1221346/9330747/240d75e0-45f6-11e5-99d0-636ca789bd53.png
-          <span
-            @class name
-            b-html
-          <span
-            @class tagline
-            An easy HTML syntax sugar
-      <p
-        @class description
-        b-html is an easy HTML syntax sugar.
+    @class root-section
+    <nav
+      @class nav-section
+      <header
+        @class nav-header
+        <h1
+          @class nav-heading
+          <a
+            @href /
+            <span
+              @class name
+              b-html
+            <span
+              @class description
+              An easy HTML syntax sugar
+      <div
+        @class nav-content
+        <ul
+          <li
+            <a
+              @href #concepts
+              Concepts
     <div
       @class content
+      <header
+        @class root-header
+        <h1
+          @class title
+          </img
+            @class logo-mark
+            @alt b-html
+            @src https://cloud.githubusercontent.com/assets/1221346/9330747/240d75e0-45f6-11e5-99d0-636ca789bd53.png
       <div
-        @class installation
-        <a
-          @href https://github.com/b-html/b-html#installation
-          Install v0.8.0
-      <div
-        @class source-code
-        <a
-          @href https://github.com/b-html/b-html
-          Source Code on GitHub
-      <div
-        @class demo
-        <a
-          @href http://b-html.org/b-html-demo/
-          @target _blank
-          Try b-html (demo)
-      <div
-        @class npm
-        <a
-          @href https://www.npmjs.com/package/b-html
-          b-html - npm
-      <div
-        @class b-html-family
-        <a
-          @href https://www.npmjs.com/browse/keyword/b-html
-          packages with keyword ‘b-html’ - npm
+        @class root-content
+        <section
+          @class concepts-section
+          @id concepts
+          <header
+            @class concepts-header
+            <h1
+              <a
+                @href #concepts
+                Concepts:
+          <div
+            @class concepts-content
+            <ul
+              <li
+                >It's just HTML (like a&nbsp;
+                <a
+                  @href http://coffeescript.org
+                  CoffeeScript
+                >)
+              <li
+                <a
+                  @href https://en.wikipedia.org/wiki/Off-side_rule
+                  Off-side rule
+              <li
+                <a
+                  @href #syntax-reference
+                  Simple syntax
