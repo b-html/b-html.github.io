@@ -62,6 +62,10 @@
             <a
               @href #concepts
               Concepts
+          <li
+            <a
+              @href #example
+              Example
     <div
       @class content
       <header
@@ -100,3 +104,98 @@
                 <a
                   @href #syntax-reference
                   Simple syntax
+        <section
+          @class example-section
+          @id example
+          <header
+            @class example-header
+            <h1
+              <a
+                @href #example
+                Example:
+          <div
+            @class example-content
+            <div
+              @class b-html
+              <table
+                <tr
+                  <td
+                    @class line-number
+                    1
+                  <td
+                    @class code
+                    <span
+                      @class indent
+                    <span
+                      @class element
+                      &lt;
+                      <span
+                        @class name
+                        p
+                <tr
+                  <td
+                    @class line-number
+                    2
+                  <td
+                    @class code
+                    <span
+                      @class indent
+                      |&nbsp;&nbsp;
+                    <span
+                      @class attribute
+                      >@
+                      <span
+                        @class name
+                        class
+                      >&nbsp;
+                      <span
+                        @class value
+                        message
+                <tr
+                  <td
+                    @class line-number
+                    3
+                  <td
+                    @class code
+                    <span
+                      @class indent
+                      |&nbsp;&nbsp;
+                    <span
+                      @class text
+                      Hello, b-html!
+            <div
+              @class html
+              <table
+                <tr
+                  <td
+                    @class line-number
+                    1
+                  <td
+                    @class code
+                    <span
+                      @class element
+                      &lt;
+                      <span
+                        @class name
+                        p
+                      &nbsp;
+                      <span
+                        @class attribute
+                        <span
+                          @class name
+                          class
+                        =
+                        <span
+                          @class value
+                          "message"
+                      &gt;
+                      <span
+                        @class text
+                        Hello, b-html!
+                      <span
+                        @class element
+                        &lt;/
+                        <span
+                          @class name
+                          p
+                        &gt;
