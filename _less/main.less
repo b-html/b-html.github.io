@@ -178,6 +178,7 @@ html {
 
 .concepts-section {
   margin: 5% 0;
+  padding: 5% 0 0 0;
 
   .concepts-content {
     ul {
@@ -196,6 +197,7 @@ html {
   @text-color: #666;
 
   margin: 5% 0;
+  padding: 5% 0 0 0;
 
   .example-content {
     margin: 5% 0;
@@ -295,6 +297,43 @@ html {
         .text {
           color: @text-color;
         }
+      }
+    }
+  }
+}
+
+.installation-section {
+  margin: 5% 0;
+  padding: 5% 0 0 0;
+
+  .installation-content {
+    margin: 5% 0;
+
+    h1 {
+      margin: 16px 0;
+    }
+
+    pre {
+      border-radius: 4px;
+      width: 100%;
+      overflow: auto;
+      color: #fff;
+      background-color: #000;
+
+      code {
+        display: block;
+        padding: 16px;
+      }
+    }
+
+    .see-also {
+      padding: 0 0 0 12px;
+      font-size: 12px;
+    }
+
+    .default {
+      h1 {
+        display: none;
       }
     }
   }

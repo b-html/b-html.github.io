@@ -66,6 +66,10 @@
             <a
               @href #example
               Example
+          <li
+            <a
+              @href #installation
+              Installation
     <div
       @class content
       <header
@@ -199,3 +203,66 @@
                           @class name
                           p
                         &gt;
+        <section
+          @class installation-section
+          @id installation
+          <header
+            @class installation-header
+            <h1
+              <a
+                @href #installation
+                Installation:
+          <div
+            @class installation-content
+            <section
+              @class default
+              <h1
+                default
+              <pre
+                <code
+                  $ npm install b-html
+              <p
+                @class see-also
+                See also:
+                <a
+                  @href #api
+                  #api
+            <section
+              @class with-cli
+              <h1
+                with CLI
+              <pre
+                <code
+                  $ npm install -g b-html-cli
+              <p
+                @class see-also
+                See also:
+                <a
+                  @href https://github.com/b-html/b-html-cli
+                  b-html/b-html-cli
+            <section
+              @class with-gulp
+              <h1
+                with gulp
+              <pre
+                <code
+                  $ npm install gulp-b-html
+              <p
+                @class see-also
+                See also:
+                <a
+                  @href https://github.com/b-html/gulp-b-html
+                  b-html/gulp-b-html
+            <section
+              @class with-browserify
+              <h1
+                with browserify
+              <pre
+                <code
+                  $ npm install b-htmlify
+              <p
+                @class see-also
+                See also:
+                <a
+                  @href https://github.com/b-html/b-htmlify
+                  b-html/b-htmlify
