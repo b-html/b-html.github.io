@@ -34,7 +34,7 @@
       @name twitter:site
       @content @bouzuya
     </link
-      @href http://fonts.googleapis.com/css?family=Orbitron:400
+      @href http://fonts.googleapis.com/css?family=Ubuntu+Mono:400|Orbitron:400
       @rel stylesheet
     </link
       @href main.css
