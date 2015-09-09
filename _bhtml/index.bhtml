@@ -70,6 +70,10 @@
             <a
               @href #installation
               Installation
+          <li
+            <a
+              @href #syntax
+              Syntax
     <div
       @class content
       <header
@@ -266,3 +270,187 @@
                 <a
                   @href https://github.com/b-html/b-htmlify
                   b-html/b-htmlify
+        <section
+          @class syntax-section
+          @id syntax
+          <header
+            @class syntax-header
+            <h1
+              <a
+                @href #syntax
+                Syntax:
+          <div
+            @class syntax-content
+            <p
+              @class syntax-summary
+              <code
+                indent (spaces)
+              >&nbsp;+&nbsp;
+              <code
+                prefix
+              >&nbsp;+&nbsp;
+              <code
+                content
+            <table
+              <thead
+                <tr
+                  <th
+                    @class prefix
+                    Prefix
+                  <th
+                    @class type
+                    Type
+                  <th
+                    @class examples
+                    Examples
+              <tbody
+                <tr
+                  <td
+                    <code
+                      &lt;
+                  <td
+                    'element'
+                  <td
+                    <code
+                      &lt;p
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;p&gt;&lt;/p&gt;
+                <tr
+                  <td
+                    <code
+                      &lt;/
+                  <td
+                    'empty element'
+                  <td
+                    <code
+                      &lt;/img
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;img /&gt;
+                <tr
+                  <td
+                    <code
+                      &lt;!--
+                  <td
+                    'comment'
+                  <td
+                    <code
+                      &lt;--xyz
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;!--xyz--&gt;
+                <tr
+                  <td
+                    <code
+                      &lt;!doctype html
+                  <td
+                    'doctype'
+                  <td
+                    <code
+                      &lt;!doctype html
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;!DOCTYPE html&gt;
+                    </br
+                    See:
+                    <a
+                      @href #doctypes
+                      #doctypes
+                <tr
+                  <td
+                    <code
+                      >@
+                  <td
+                    'attribute'
+                  <td
+                    <code
+                      >@class foo
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      class="foo"
+                <tr
+                  @class text
+                  <td
+                    <code
+                      &gt;
+                  <td
+                    'text'
+                  <td
+                    <code
+                      &gt;text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      text
+                    </br
+                    <code
+                      &gt;&lt;text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;text
+                    </br
+                    <code
+                      &gt;@text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      >@text
+                    </br
+                    <code
+                      &gt;&gt;text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &gt;text
+                    </br
+                    <code
+                      &gt;|text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      >|text
+                <tr
+                  @class new-line-text
+                  <td
+                    <code
+                      >|
+                  <td
+                    'new line text'
+                  <td
+                    <code
+                      >|text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;NL&gt;text
+                    </br
+                    <code
+                      >|&lt;text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;NL&gt;&lt;text
+                    </br
+                    <code
+                      >|@text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;NL&gt;@text
+                    </br
+                    <code
+                      >|&gt;text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;NL&gt;&gt;text
+                    </br
+                    <code
+                      >||text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      &lt;NL&gt;|text
+                <tr
+                  <td
+                    (others)
+                  <td
+                    'text' (default)
+                  <td
+                    <code
+                      text
+                    &nbsp;-&gt;&nbsp;
+                    <code
+                      text

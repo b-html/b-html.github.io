@@ -339,3 +339,61 @@ html {
     }
   }
 }
+
+.syntax-section {
+  margin: 5% 0;
+  padding: 5% 0 0 0;
+
+  .syntax-content {
+    margin: 5% 0;
+    font-size: 12px;
+
+    .syntax-summary {
+      margin: 5% 0;
+    }
+
+    code {
+      background-color: #eee;
+      border-radius: 4px;
+      padding: 4px 8px;
+    }
+
+    table {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    thead {
+      border-bottom: 1px solid #333;
+
+      .prefix {
+        width: 25%;
+      }
+
+      .type {
+        width: 25%;
+      }
+
+      .examples {
+        // width: 50%;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #eee;
+        height: 64px;
+
+        &.text,
+        &.new-line-text {
+          height: 128px;
+        }
+      }
+
+      td {
+        line-height: 12px + (4px * 2) + (2px * 2);
+      }
+    }
+  }
+}
