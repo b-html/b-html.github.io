@@ -281,8 +281,10 @@
                 Syntax:
           <div
             @class syntax-content
-            <p
-              @class syntax-summary
+            <section
+              @class summary
+              <h1
+                Syntax Summary
               <code
                 indent (spaces)
               >&nbsp;+&nbsp;
@@ -291,166 +293,269 @@
               >&nbsp;+&nbsp;
               <code
                 content
-            <table
-              <thead
-                <tr
-                  <th
-                    @class prefix
-                    Prefix
-                  <th
-                    @class type
-                    Type
-                  <th
-                    @class examples
-                    Examples
-              <tbody
-                <tr
-                  <td
-                    <code
-                      &lt;
-                  <td
-                    'element'
-                  <td
-                    <code
-                      &lt;p
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;p&gt;&lt;/p&gt;
-                <tr
-                  <td
-                    <code
-                      &lt;/
-                  <td
-                    'empty element'
-                  <td
-                    <code
-                      &lt;/img
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;img /&gt;
-                <tr
-                  <td
-                    <code
-                      &lt;!--
-                  <td
-                    'comment'
-                  <td
-                    <code
-                      &lt;--xyz
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;!--xyz--&gt;
-                <tr
-                  <td
-                    <code
-                      &lt;!doctype html
-                  <td
-                    'doctype'
-                  <td
-                    <code
-                      &lt;!doctype html
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;!DOCTYPE html&gt;
-                    </br
-                    See:
-                    <a
-                      @href #doctypes
-                      #doctypes
-                <tr
-                  <td
-                    <code
-                      >@
-                  <td
-                    'attribute'
-                  <td
-                    <code
-                      >@class foo
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      class="foo"
-                <tr
-                  @class text
-                  <td
-                    <code
-                      &gt;
-                  <td
-                    'text'
-                  <td
-                    <code
-                      &gt;text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      text
-                    </br
-                    <code
-                      &gt;&lt;text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;text
-                    </br
-                    <code
-                      &gt;@text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      >@text
-                    </br
-                    <code
-                      &gt;&gt;text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &gt;text
-                    </br
-                    <code
-                      &gt;|text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      >|text
-                <tr
-                  @class new-line-text
-                  <td
-                    <code
-                      >|
-                  <td
-                    'new line text'
-                  <td
-                    <code
-                      >|text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;NL&gt;text
-                    </br
-                    <code
-                      >|&lt;text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;NL&gt;&lt;text
-                    </br
-                    <code
-                      >|@text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;NL&gt;@text
-                    </br
-                    <code
-                      >|&gt;text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;NL&gt;&gt;text
-                    </br
-                    <code
-                      >||text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      &lt;NL&gt;|text
-                <tr
-                  <td
-                    (others)
-                  <td
-                    'text' (default)
-                  <td
-                    <code
-                      text
-                    &nbsp;-&gt;&nbsp;
-                    <code
-                      text
+            <section
+              @class prefixes
+              @id prefixes
+              <h1
+                Prefixes
+              <table
+                <thead
+                  <tr
+                    <th
+                      @class prefix
+                      Prefix
+                    <th
+                      @class type
+                      Type
+                    <th
+                      @class examples
+                      Examples
+                <tbody
+                  <tr
+                    <td
+                      <code
+                        &lt;
+                    <td
+                      'element'
+                    <td
+                      <code
+                        &lt;p
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;p&gt;&lt;/p&gt;
+                  <tr
+                    <td
+                      <code
+                        &lt;/
+                    <td
+                      'empty element'
+                    <td
+                      <code
+                        &lt;/img
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;img /&gt;
+                  <tr
+                    <td
+                      <code
+                        &lt;!--
+                    <td
+                      'comment'
+                    <td
+                      <code
+                        &lt;--xyz
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;!--xyz--&gt;
+                  <tr
+                    <td
+                      <code
+                        &lt;!doctype html
+                    <td
+                      'doctype'
+                    <td
+                      <code
+                        &lt;!doctype html
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;!DOCTYPE html&gt;
+                      </br
+                      See:
+                      <a
+                        @href #doctypes
+                        #doctypes
+                  <tr
+                    <td
+                      <code
+                        >@
+                    <td
+                      'attribute'
+                    <td
+                      <code
+                        >@class foo
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        class="foo"
+                  <tr
+                    @class text
+                    <td
+                      <code
+                        &gt;
+                    <td
+                      'text'
+                    <td
+                      <code
+                        &gt;text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        text
+                      </br
+                      <code
+                        &gt;&lt;text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;text
+                      </br
+                      <code
+                        &gt;@text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        >@text
+                      </br
+                      <code
+                        &gt;&gt;text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &gt;text
+                      </br
+                      <code
+                        &gt;|text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        >|text
+                  <tr
+                    @class new-line-text
+                    <td
+                      <code
+                        >|
+                    <td
+                      'new line text'
+                    <td
+                      <code
+                        >|text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;NL&gt;text
+                      </br
+                      <code
+                        >|&lt;text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;NL&gt;&lt;text
+                      </br
+                      <code
+                        >|@text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;NL&gt;@text
+                      </br
+                      <code
+                        >|&gt;text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;NL&gt;&gt;text
+                      </br
+                      <code
+                        >||text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        &lt;NL&gt;|text
+                  <tr
+                    <td
+                      (others)
+                    <td
+                      'text' (default)
+                    <td
+                      <code
+                        text
+                      &nbsp;-&gt;&nbsp;
+                      <code
+                        text
+            <section
+              @class doctypes
+              @id doctypes
+              <h1
+                Doctypes
+              <ul
+                <li
+                  <code
+                    >&lt;!doctype html
+                  > -&gt; (HTML 5)
+                <li
+                  <code
+                    >&lt;!doctype html 5
+                  > -&gt; (HTML 5)
+                <li
+                  <code
+                    >&lt;!doctype html 4.01 strict
+                  > -&gt; (HTML 4.01 Strict)
+                <li
+                  <code
+                    >&lt;!doctype html 4.01 transitional
+                  > -&gt; (HTML 4.01 Transitional)
+                <li
+                  <code
+                    >&lt;!doctype html 4.01 frameset
+                  > -&gt; (HTML 4.01 Frameset)
+                <li
+                  <code
+                    >&lt;!doctype html strict
+                  > -&gt; (HTML 4.01 Strict)
+                <li
+                  <code
+                    >&lt;!doctype html transitional
+                  > -&gt; (HTML 4.01 Transitional)
+                <li
+                  <code
+                    >&lt;!doctype html frameset
+                  > -&gt; (HTML 4.01 Frameset)
+                <li
+                  <code
+                    >&lt;!doctype xhtml 1.0 strict
+                  > -&gt; (XHTML 1.0 Strict)
+                <li
+                  <code
+                    >&lt;!doctype xhtml 1.0 transitional
+                  > -&gt; (XHTML 1.0 Transitional)
+                <li
+                  <code
+                    >&lt;!doctype xhtml 1.0 frameset
+                  > -&gt; (XHTML 1.0 Frameset)
+                <li
+                  <code
+                    >&lt;!doctype xhtml strict
+                  > -&gt; (HTML 1.0 Strict)
+                <li
+                  <code
+                    >&lt;!doctype xhtml transitional
+                  > -&gt; (HTML 1.0 Transitional)
+                <li
+                  <code
+                    >&lt;!doctype xhtml frameset
+                  > -&gt; (HTML 1.0 Frameset)
+                <li
+                  <code
+                    >&lt;!doctype xhtml 1.1
+                  > -&gt; (XHTML 1.1)
+                <li
+                  <code
+                    >&lt;!doctype xhtml basic
+                  > -&gt; (XHTML Basic 1.1)
+                <li
+                  <code
+                    >&lt;!doctype xhtml basic 1.0
+                  > -&gt; (XHTML Basic 1.0)
+                <li
+                  <code
+                    >&lt;!doctype xhtml basic 1.1
+                  > -&gt; (XHTML Basic 1.1)
+                <li
+                  <code
+                    >&lt;!doctype xhtml mobile
+                  > -&gt; (XHTML Mobile 1.2)
+                <li
+                  <code
+                    >&lt;!doctype xhtml mobile 1.0
+                  > -&gt; (XHTML Mobile 1.0)
+                <li
+                  <code
+                    >&lt;!doctype xhtml mobile 1.1
+                  > -&gt; (XHTML Mobile 1.1)
+                <li
+                  <code
+                    >&lt;!doctype xhtml mobile 1.2
+                  > -&gt; (XHTML Mobile 1.2)
+                <li
+                  <code
+                    >&lt;!doctype html PUBLIC ...
+                  > -&gt; &lt;!DOCTYPE html PUBLIC ...&gt;
